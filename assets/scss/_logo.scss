@@ -1,0 +1,46 @@
+@keyframes random {
+  0% {
+    transform: translateX(0%), translateY(0%);
+    opacity: 0;
+    z-index: 0;
+  }
+  10% {
+    transform: translateX(-0.1%), translateY(0.1%);
+    z-index: 10;
+    opacity: .7;
+  }
+
+  100% {
+    transform: translateX(0.1%);
+    opacity: .9;
+    z-index: 4;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: .7;
+  }
+
+    20% {
+        opacity: 1;
+    }
+}
+
+
+#logo {
+  #flare-1 {
+    fill: #0077ff;
+    animation: random 700ms infinite;
+  }
+
+  #flare-2 {
+    fill: #ff0077;
+    animation: random 1600ms infinite;
+  }
+
+  #logo {
+    fill: #000;
+    animation: opacity 2000ms infinite;
+  }
+}

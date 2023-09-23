@@ -1,0 +1,35 @@
+$theme-colors: (
+        'primary': #FF0077,
+        'secondary': #0077ff,
+        'success': #00FF77,
+        'dark': #001738,
+);
+
+@import "bootstrap";
+
+@import "logo";
+
+#main {
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+
+  transition: all 1500ms linear;
+
+  height: 100vh;
+
+  & > div {
+    transform: rotate(-5deg);
+  }
+
+  svg {
+    width: 90vw;
+    @include media-breakpoint-up(md) {
+      width: 40vw;
+    }
+  }
+}
+
+.text-right {
+  text-align: right;
+}
